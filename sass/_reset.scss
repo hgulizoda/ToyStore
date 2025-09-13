@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  @media (max-width: 1200px) {
+    font-size: 9px;
+  }
+  @media (max-width: 900px) {
+    font-size: 8px;
+  }
+  @media (max-width: 600px) {
+    font-size: 7px;
+  }
+  @media (max-width: 400px) {
+    font-size: 5px;
+  }
+  body {
+    .container {
+      max-width: 1200px;
+      margin-inline: auto;
+      @media (max-width: 1200px) {
+        max-width: 90%;
+      }
+    }
+    .btn {
+      padding: 1.2rem 2.8rem;
+      border-radius: 2.4rem;
+      border: none;
+      &.green {
+        background-color: $primary-green;
+        color: $primary-white;
+      }
+      &.white {
+        background-color: $primary-white;
+        color: $text-black;
+      }
+    }
+  }
+}
